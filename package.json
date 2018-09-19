@@ -1,0 +1,55 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "TodoList Built With TypeScript, TypeORM, Apollo, + GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec ts-node -r tsconfig-paths/register src/index.ts",
+    "test": "jest --colors"
+  },
+  "keywords": [
+    "TypeScript",
+    "TypeORM",
+    "GraphQL",
+    "Apollo"
+  ],
+  "author": "Robbie McClellan",
+  "license": "ISC",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "apollo-server": "^2.0.7",
+    "graphql": "^14.0.2",
+    "lodash": "^4.17.11",
+    "pg": "^7.4.3",
+    "reflect-metadata": "^0.1.12",
+    "typeorm": "^0.2.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^10.9.4",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.6.0",
+    "typescript": "^3.0.3"
+  }
+}
